@@ -1,0 +1,85 @@
+{
+    "Soups" : [
+        {
+            "title": "Tavuklu Ramen",
+            "text": "Tavuk suyu, tavuk, taze soğan, soya filizi, yumurta",
+            "price": 114,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1670343642_1.jpg"
+        },
+        {
+            "title": "Erişte Çorbası",
+            "text": "Dana eti, taze erişte, kişniş, kırmızı soğan",
+            "price": 71,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1670343551_1.jpg"
+        },
+        {
+            "title": "Acılı Ekşili Çorba",
+            "text": "Beyaz lahana, havuç, soya filizi, tavuk, yumurta",
+            "price": 68,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1303651869_1.jpg"
+        }
+
+    ],
+    "Salads" : [
+        {
+            "title": "Wakame Salad",
+            "text": "Kıvırcık, salatalık, havuç, wakame, kani, susam",
+            "price": 136,
+            "href":"https://www.sushiexpress.com.tr/site/products/small/1303652456_1.jpg"
+        },
+        {
+            "title": "Sashimi Salad",
+            "text": "Wakame, uskumru, ton, somon, levrek, karides, kani, kıvırcık",
+            "price": 222 ,
+            "href":"https://www.sushiexpress.com.tr/site/products/small/1303652405_1.jpg"
+        },
+        {
+            "title": "Chinese Salad",
+            "text": "Kırmızı Lahana,Domates,Acı Sos",
+            "price": 78,
+            "href":"https://www.sushiexpress.com.tr/site/products/small/1464298459_1.jpg"
+        }
+    ],
+    "Sushis" : [
+        {
+            "title": "Sesame Roll",
+            "text": "Karides, avokado, salatalık,susam ile kaplı",
+            "price": 128,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1623963934_1.jpg"
+        },
+        {
+            "title": "Spicy Sesame Roll",
+            "text": "(Acılı) Karides, avokado, salatalık, shichimi sos, susam ile kaplı",
+            "price": 130,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1623961512_1.jpg"
+        },
+        {
+            "title": "Salmon California Roll ",
+            "text": "Somon, avokado, salatalık, susam ile kaplı",
+            "price": 146,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1623961542_1.jpg"
+        }
+
+    ],
+    "Desserts" : [
+        {
+            "title": "Kızarmış Ananas ",
+            "text": "Bal,ananas,un,tarçın,pudra şeker,dondurma",
+            "price": 94,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1478800563_1.jpg"
+        },
+        {
+            "title": "Muzlu ve Fındık Kremalı Gyoza",
+            "text": "Japon mantısı, muz, fındık, fındık ezmesi, çikolata sos",
+            "price": 84,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1654491343_1.jpg"
+        },
+        {
+            "title": " Chocolate Roll ",
+            "text": "Fındık kreması, çikolata, fındık, biskuvi, çikolata sos",
+            "price": 88,
+            "href": "https://www.sushiexpress.com.tr/site/products/small/1670345482_1.jpg"
+        }
+    ]
+
+}

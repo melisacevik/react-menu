@@ -1,17 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Header from './Header';
+import Sidebar from './Sidebar';
+//import Area from './Area.json';
+import Salads from './Salads';
+import {BrowserRouter as Router , Route, Routes } from 'react-router-dom';
+import Soups from './Soups';
+import Sushis from './Sushis';
+import Desserts from './Desserts';
+import RigthSidebar from './RigthSidebar';
+import Contact from './Contact';
+import About from './About';
+import Home from './Home';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
-    <App />
+  
+
+  
+  <Router> 
+  <Home />
+    <Header />
+    
+    <Sidebar />
+    <Routes> 
+      <Route path='/Soups' element={<Soups/>}> </Route>
+      <Route path='/Salads' element={<Salads/>}> </Route>
+      <Route path='/Sushis' element={<Sushis/>}> </Route>
+      <Route path='/Desserts' element={<Desserts/>}> </Route>
+      <Route path='/Contact' element={<Contact/>}> </Route>
+      <Route path='/About' element={<About/>}> </Route>
+      
+    </Routes>
+    <RigthSidebar />
+    
+  </Router>
+  
+  
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
