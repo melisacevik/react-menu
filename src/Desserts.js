@@ -1,4 +1,5 @@
 import Area from './Area.json';
+import { addToBasket } from './Functions';
 
 const Cardstyle2 = {
     display: "inline-block",
@@ -17,6 +18,8 @@ const plusStyle = {
 }
 const Desserts = () => {
 
+
+
     return(
 
         Area.Desserts.map(dessert => {
@@ -28,7 +31,7 @@ const Desserts = () => {
                         <p className="card-text" style={cardTextStyle2}>{dessert.text}</p>
                         <div className='d-flex justify-content-between align-items-center'>
                         <a href="#" className="btn btn-dark">{dessert.price} .00 TL </a>
-                        <button style={plusStyle} className="p-1 px-3"> + </button>
+                        <button style={plusStyle} className="p-1 px-3" onClick={() => addToBasket(dessert)}> + </button>
                     </div>
                     </div>
                 </div>

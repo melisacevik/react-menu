@@ -1,4 +1,6 @@
 import Area from './Area.json';
+import { addToBasket } from './Functions';
+
 
 const Cardstyle = {
     display: "inline-block",
@@ -15,7 +17,8 @@ const plusStyle = {
     backgroundColor: "#ffc008",
     
 }
-const Salads = () => {
+const Salads = (props) => {
+
 
     return(
         Area.Salads.map(salad => {
@@ -27,7 +30,7 @@ const Salads = () => {
                         <p className="card-text" style={cardTextStyle}>{salad.text}</p>
                         <div className='d-flex justify-content-between align-items-center'>
                         <a href="#" className="btn btn-dark">{salad.price} .00 TL </a>
-                        <button style={plusStyle} className="p-1 px-3"> + </button>
+                        <button style={plusStyle} className="p-1 px-3" onClick={() => addToBasket(salad)}> + </button>
                     </div>
                     </div>
                 </div>

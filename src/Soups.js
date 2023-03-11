@@ -1,5 +1,6 @@
-import salad1 from './img/salad1.jpeg';
 import Area from './Area.json';
+import { addToBasket } from './Functions';
+
 
 const Cardstyle = {
     display: "inline-block",
@@ -20,9 +21,9 @@ const plusStyle = {
 
 const Soups = () => {
 
+
     return(
 
-        
         
         Area.Soups.map(soup => {
             return (
@@ -35,7 +36,7 @@ const Soups = () => {
                         <p className="card-text" style={cardTextStyle}>{soup.text}</p>
                     <div className='d-flex justify-content-between align-items-center'>
                         <a href="#" className="btn btn-dark">{soup.price} .00 TL </a>
-                        <button style={plusStyle} className="p-1 px-3"> + </button>
+                        <button style={plusStyle} className="p-1 px-3" onClick={() => addToBasket(soup)}> + </button>
                     </div>
                     </div>
                     </div>

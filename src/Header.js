@@ -1,5 +1,6 @@
 //import Sidebar from "./Sidebar";
 import { Link} from "react-router-dom";
+import { showBasket } from "./Functions";
 
 const contactStyle = {
 
@@ -69,7 +70,7 @@ const Header = () => {
                   <button className="nav-link text-danger bg-warning border-1 mb-1 py-0 px-2 m-2" onClick={alertWaiter} style={borderStyle}> Waiter </button>
                   
                   <div> 
-                    <button style={borderStyle} className="nav-link d-flex justify-content-center align-items-center text-dark bg-warning mb-1 m-2 px-2 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRigth" aria-controls="offcanvasRigth">
+                    <button onClick={showBasket} style={borderStyle} className="nav-link d-flex justify-content-center align-items-center text-dark bg-warning mb-1 m-2 px-2 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRigth" aria-controls="offcanvasRigth">
                     Shopping Card
                     </button>
                   </div>

@@ -14,6 +14,20 @@ const borderStyle = {
     
 }
 
+const foods = sessionStorage.getItem('selectedFoods')
+const obj = JSON.parse(foods);
+
+
+
+let sum=0;
+if( obj ){
+    
+    for(let i=0; i< obj.length ; i++){
+        
+        sum += obj[i].price
+    }
+}
+
 const RigthSidebar = () => {
 
     return(
@@ -34,28 +48,33 @@ const RigthSidebar = () => {
                         <div className='col-6 text-end p-0'>
                             <p> Price </p>
                         </div>
+
+
+                        <div className="basket-items p-0"></div>
                     </div>
-                    
-                    {/* {
-                        Area.forEach(group => {
-                            group.forEach(product => {
-                                return(
-                                    <div className='row'>
-                                        <div className='col-6 text-start p-0'> 
-                                            <p> {product.title }</p> 
-                                        </div>
-                                        <div className='col-6 text-end p-0'>
-                                            <p> {product.price}</p>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }) 
-                    } */
-                    
-                    
-                    
-                    }
+                {
+                    obj && obj.map((eleman, eleman_index) => {
+                        return(
+                            <div key={eleman_index} className='row'>
+                                <div className='col-6 text-start p-0'>
+                                    <p> {eleman.title} </p>
+                                 </div>
+                                 <div className='col-6 text-end p-0'>
+                                    <p>  {eleman.price}</p>
+                                </div>
+
+                            </div>
+                        );
+                    }) 
+                }
+                    <div className='row'>
+                        <div className='col-6 text-start p-0 text-bg-danger'>
+                            <p> Total Price </p>
+                        </div>
+                        <div  className='col-6 text-end p-0 text-bg-danger'>
+                            <p id="sum"> </p>
+                        </div>
+                    </div>
                 </div>
                 </div>
                 </div>
